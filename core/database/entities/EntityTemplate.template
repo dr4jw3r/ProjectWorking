@@ -1,0 +1,45 @@
+<?php 
+	require_once('BaseEntity.php');
+	require_once('IEntity.php');
+
+
+	class CLASS_NAME extends BaseEntity implements IEntity
+	{
+		private $id;
+
+		public function __construct()
+		{
+			$num_args = func_num_args();
+			
+			if($num_args == 1)
+			{
+				$args = func_get_args();
+				$args = $args[0];
+
+				if(isset($args['id']) && !empty($args['id'])){
+					$this->id = $args['id'];
+				}
+						
+			}
+		}
+
+	    public function get_id()
+	    {
+	        return $this->id;
+	    }
+	    public function set_id($id)
+	    {
+	        $this->id = $id;
+	    }
+	  	
+
+
+	    /*=:INTERFACE FUNCTIONS:=*/
+      	public static function getProps(){
+	    	$props = get_class_vars(__CLASS__);
+	    	$props = array_keys($props);
+	    	return $props;
+	    }
+
+	}
+?>

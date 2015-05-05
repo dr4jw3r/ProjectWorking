@@ -1,0 +1,44 @@
+05/05/2015 16:52:10
+======================
+Type: PDOException
+Code: 42000
+File: /opt/lampp/htdocs/Project/core/database/repositories/Repository.php
+Line: 392
+
+Stack trace:
+---------------------
+#0 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(392): PDO->prepare('DELETE FROM `La...')
+#1 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(343): Repository->buildDelete(1)
+#2 /opt/lampp/htdocs/Project/core/services/ActiveLessonService.php(65): Repository->delete(1)
+#3 /opt/lampp/htdocs/Project/core/functions/general/sitewide_functions.php(52): ActiveLessonService->delete(1)
+#4 /opt/lampp/htdocs/Project/pages/index.php(7): checkLessons()
+#5 {main}
+---------------------
+
+Message:
+---------------------
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+---------------------
+
+
+
+
+
+
+Raw exception: 
+--------------------------------
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /opt/lampp/htdocs/Project/core/database/repositories/Repository.php:392
+Stack trace:
+#0 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(392): PDO->prepare('DELETE FROM `La...')
+#1 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(343): Repository->buildDelete(1)
+#2 /opt/lampp/htdocs/Project/core/services/ActiveLessonService.php(65): Repository->delete(1)
+#3 /opt/lampp/htdocs/Project/core/functions/general/sitewide_functions.php(52): ActiveLessonService->delete(1)
+#4 /opt/lampp/htdocs/Project/pages/index.php(7): checkLessons()
+#5 {main}exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /opt/lampp/htdocs/Project/core/database/repositories/Repository.php:392
+Stack trace:
+#0 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(392): PDO->prepare('DELETE FROM `La...')
+#1 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(343): Repository->buildDelete(1)
+#2 /opt/lampp/htdocs/Project/core/services/ActiveLessonService.php(65): Repository->delete(1)
+#3 /opt/lampp/htdocs/Project/core/functions/general/sitewide_functions.php(52): ActiveLessonService->delete(1)
+#4 /opt/lampp/htdocs/Project/pages/index.php(7): checkLessons()
+#5 {main}

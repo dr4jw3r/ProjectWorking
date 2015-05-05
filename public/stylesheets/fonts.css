@@ -1,0 +1,35 @@
+/*-= FONTS =-*/
+@font-face{
+	font-family: 'Roboto Slab';
+	src: url('../fonts/RobotoSlab.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'AnticSlab';
+	src: 	url('../fonts/AnticSlab.ttf') format('truetype'),
+			url('../fonts/AnticSlab.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: 'Oswald';
+	src: 	url('../fonts/Oswald.ttf') format('truetype'),
+			url('../fonts/Oswald.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: 'Montserrat';
+	src: 	url('../fonts/Montserrat.ttf') format('truetype'),
+			url('../fonts/Montserrat.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: 'Radley';
+	src: 	url('../fonts/Radley.ttf') format('truetype'),
+			url('../fonts/Radley.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: 'RadleyItalic';
+	src: 	url('../fonts/RadleyItalic.ttf') format('truetype'),
+			url('../fonts/RadleyItalic.woff2') format('woff2');
+}

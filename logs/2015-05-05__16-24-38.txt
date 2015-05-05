@@ -1,0 +1,44 @@
+05/05/2015 16:24:38
+======================
+Type: PDOException
+Code: 1045
+File: /opt/lampp/htdocs/Project/core/database/Database.php
+Line: 35
+
+Stack trace:
+---------------------
+#0 /opt/lampp/htdocs/Project/core/database/Database.php(35): PDO->__construct('mysql:host=loca...', 'appuser', 'apppassword')
+#1 /opt/lampp/htdocs/Project/core/database/Database.php(14): Database::openConnection(Array)
+#2 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(22): Database::getInstance()
+#3 /opt/lampp/htdocs/Project/core/services/UserService.php(13): Repository->__construct('User')
+#4 /opt/lampp/htdocs/Project/core/processes/login.php(14): UserService->__construct()
+#5 {main}
+---------------------
+
+Message:
+---------------------
+SQLSTATE[HY000] [1045] Access denied for user 'appuser'@'localhost' (using password: YES)
+---------------------
+
+
+
+
+
+
+Raw exception: 
+--------------------------------
+exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'appuser'@'localhost' (using password: YES)' in /opt/lampp/htdocs/Project/core/database/Database.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/Project/core/database/Database.php(35): PDO->__construct('mysql:host=loca...', 'appuser', 'apppassword')
+#1 /opt/lampp/htdocs/Project/core/database/Database.php(14): Database::openConnection(Array)
+#2 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(22): Database::getInstance()
+#3 /opt/lampp/htdocs/Project/core/services/UserService.php(13): Repository->__construct('User')
+#4 /opt/lampp/htdocs/Project/core/processes/login.php(14): UserService->__construct()
+#5 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'appuser'@'localhost' (using password: YES)' in /opt/lampp/htdocs/Project/core/database/Database.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/Project/core/database/Database.php(35): PDO->__construct('mysql:host=loca...', 'appuser', 'apppassword')
+#1 /opt/lampp/htdocs/Project/core/database/Database.php(14): Database::openConnection(Array)
+#2 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(22): Database::getInstance()
+#3 /opt/lampp/htdocs/Project/core/services/UserService.php(13): Repository->__construct('User')
+#4 /opt/lampp/htdocs/Project/core/processes/login.php(14): UserService->__construct()
+#5 {main}
