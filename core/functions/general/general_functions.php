@@ -177,6 +177,7 @@
 		This function retrieves the translations from ini files.
 	*/
 	function getTranslations($type){
+
 		if(!isset($_COOKIE['current_language'])){
 			$lang = 'en';
 		}
@@ -185,6 +186,26 @@
 		}
 
 		return parse_ini_file(LANGUAGE_DIR . 'php/' . $lang . '/' . $type . '.ini');
+	}
+
+	/*
+		This function generates the options for the language choice dropdown
+	*/
+	function generateLanguageDropdown()
+	{
+		$template = '<option value="%s">%s</option>';
+		$ignored = array('.', '..');
+		$dirs = scandir(LANGUAGE_DIR . 'php/');
+		$html = '';
+
+		foreach($dirs as $dir)
+		{
+			if(!in_array($dir, $ignored))
+			{
+				$html .= sprintf($template, $dir, $dir);
+			}
+		}
+		echo $html;
 	}
 
 	/*

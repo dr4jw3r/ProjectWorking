@@ -12,6 +12,7 @@
 
 	$lang['navigation'] = getTranslations('navigation');
 	$lang['general'] 	= getTranslations('general');
+	$lang['index']		= getTranslations('index');
 
 	$page_title = 'LangExchange';
 	$active_page = 'homepage';
@@ -33,6 +34,17 @@
 			$message_service->generateDashboardBox();
 			echo $request_upcoming_dash_box;
 			echo '</div>';
+		}
+		else
+		{
+			echo sprintf('<div id="homepage_background">
+					<div id="homepage_overlay">
+						<div id="homepage_content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<p><a href="%s" id="welcome_button">%s</a></p>
+						</div>
+					</div>
+				</div>', PAGES_URL . 'registration.php', $lang['index']['get_started']);
 		}
 	?>
 </section>

@@ -55,7 +55,8 @@
 	<?php printSessionErrors(); printSessionSuccess(); ?>
 
 	<div id="settings_sidebar_right">
-		<?php 
+		<?php
+			require_once(PAGE_ELEMENTS_DIR . 'change_language_form.php');  
 			require_once(PAGE_ELEMENTS_DIR . 'personal_settings_form.php'); 
 			require_once(PAGE_ELEMENTS_DIR . 'public_settings_form.php');
 			require_once(PAGE_ELEMENTS_DIR . 'language_settings_form.php');

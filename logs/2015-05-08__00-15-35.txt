@@ -1,0 +1,41 @@
+08/05/2015 00:15:35
+======================
+Type: PDOException
+Code: 23000
+File: /opt/lampp/htdocs/Project/core/database/repositories/Repository.php
+Line: 41
+
+Stack trace:
+---------------------
+#0 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(41): PDOStatement->execute()
+#1 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(408): Repository->process_query(Object(PDOStatement))
+#2 /opt/lampp/htdocs/Project/core/services/MessageService.php(241): Repository->save(Object(Message))
+#3 /opt/lampp/htdocs/Project/core/processes/sendmessage.php(20): MessageService->saveOrUpdate(Object(Message))
+#4 {main}
+---------------------
+
+Message:
+---------------------
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_from_id' cannot be null
+---------------------
+
+
+
+
+
+
+Raw exception: 
+--------------------------------
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_from_id' cannot be null' in /opt/lampp/htdocs/Project/core/database/repositories/Repository.php:41
+Stack trace:
+#0 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(41): PDOStatement->execute()
+#1 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(408): Repository->process_query(Object(PDOStatement))
+#2 /opt/lampp/htdocs/Project/core/services/MessageService.php(241): Repository->save(Object(Message))
+#3 /opt/lampp/htdocs/Project/core/processes/sendmessage.php(20): MessageService->saveOrUpdate(Object(Message))
+#4 {main}exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_from_id' cannot be null' in /opt/lampp/htdocs/Project/core/database/repositories/Repository.php:41
+Stack trace:
+#0 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(41): PDOStatement->execute()
+#1 /opt/lampp/htdocs/Project/core/database/repositories/Repository.php(408): Repository->process_query(Object(PDOStatement))
+#2 /opt/lampp/htdocs/Project/core/services/MessageService.php(241): Repository->save(Object(Message))
+#3 /opt/lampp/htdocs/Project/core/processes/sendmessage.php(20): MessageService->saveOrUpdate(Object(Message))
+#4 {main}
